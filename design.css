@@ -1,0 +1,12 @@
+html {
+    background-color: rgb(208, 252, 208);
+}
+
+.title {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    color: rgb(148, 221, 245);
+    font-size: 40px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
