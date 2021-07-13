@@ -6,9 +6,35 @@ html {
     display: flex;
     justify-content: center;
     flex-wrap: wrap;
+    text-align: center;
     color: rgb(139, 216, 241);
-    font-size: 40px;
-    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 48px;
+    font-family:monospace;
+}
+
+h2 {
+    display: flex;
+    justify-content: center;
+    color: rgb(139, 216, 241);
+    font-family:monospace;
+    font-size: 20px;
+    line-height: 1.5px;
+}
+
+p {
+    display: flex;
+    justify-content: center;
+    color: rgb(139, 216, 241);
+    font-family:monospace;
+    font-size: 15px;
+}
+
+.refresh {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    margin-bottom: 10px;
 }
 
 #container {
@@ -21,12 +47,12 @@ html {
 }
 
 .gridsquare {
-    background-color: rgb(250, 234, 244);
+    background-color: pink;
     height:25px;
     width:25px;
-    border: solid 1px black;
+    border: solid 1px white;
 }
 
 .pinkColor {
-    background-color: pink;
+    background-color: rgb(250, 234, 244);
 }

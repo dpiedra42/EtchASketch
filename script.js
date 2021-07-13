@@ -1,6 +1,10 @@
 
 const container = document.getElementById("container");
 
+function refreshPage() {
+    window.location.reload();
+}
+
 function createGrid(size) {
     for(var i = 0; i < size; i++){ 
         var row = document.createElement("div"); 
