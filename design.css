@@ -14,11 +14,11 @@ html {
 
 h2 {
     display: flex;
+    flex-wrap: wrap;
     justify-content: center;
     color: rgb(139, 216, 241);
     font-family:monospace;
     font-size: 20px;
-    line-height: 1.5px;
 }
 
 p {
@@ -27,6 +27,7 @@ p {
     color: rgb(139, 216, 241);
     font-family:monospace;
     font-size: 15px;
+    font-weight: bold;
 }
 
 .refresh {
