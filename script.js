@@ -8,8 +8,9 @@ function createGrid(size) {
         for(var x = 0; x < size; x++){ 
             var cell = document.createElement("div"); 
             cell.className = "gridsquare"; 
+            cell.addEventListener('mouseover',e => e.target.classList.add('pinkColor'))
             row.appendChild(cell); 
-        } 
+        }
         container.appendChild(row); 
       } 
 }
