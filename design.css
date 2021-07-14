@@ -35,7 +35,12 @@ button {
     font-family: monospace;
     font-size: 20px;
     border: solid 1px wheat;
+    border-radius: 7px;
     margin: 5px;
+}
+
+button:hover {
+    background-color: pink;
 }
 
 #container {

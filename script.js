@@ -1,6 +1,12 @@
-
 const container = document.querySelector("#container");
 let gridSize = 0;
+
+function changeColor(e) {
+    const randomR = Math.floor(Math.random() * 256);
+    const randomG = Math.floor(Math.random() * 256);
+    const randomB = Math.floor(Math.random() * 256);
+    e.target.style.backgroundColor = `rgb(${randomR}, ${randomG}, ${randomB})`;
+  }
 
 function clearGrid() {
     const gridArray = Array.from(container.childNodes);
