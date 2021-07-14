@@ -21,15 +21,6 @@ h2 {
     font-size: 20px;
 }
 
-p {
-    display: flex;
-    justify-content: center;
-    color: rgb(139, 216, 241);
-    font-family:monospace;
-    font-size: 15px;
-    font-weight: bold;
-}
-
 .refresh {
     display: flex;
     justify-content: center;
