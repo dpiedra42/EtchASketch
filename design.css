@@ -54,3 +54,16 @@ button {
 .pinkColor {
     background-color: pink;
 }
+
+footer {
+    display: flex;
+    justify-content: center;
+    color: thistle;
+    font-size: small;
+}
+
+.strawberry {
+    margin-left: 5px;
+    height: 15px;
+    width: 15px;
+}
