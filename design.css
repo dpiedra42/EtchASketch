@@ -46,7 +46,7 @@ button {
     border: 5px solid rgb(247, 230, 230);
   }
   
-  .grid-element {
+  .grid-square {
     border: 1px solid white;
     background-color: rgb(250, 234, 244);
   }

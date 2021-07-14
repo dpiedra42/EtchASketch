@@ -12,6 +12,8 @@ function clearGrid() {
 function changeSize() {
     let chosenSize = prompt("Enter the size you would like :)");
 
+    if (chosenSize < 1 || chosenSize > 100)
+        chosenSize = prompt("The number has to be within 1-100");
     clearGrid();
     createGrid(chosenSize);
 }
@@ -27,7 +29,7 @@ function createGrid(size) {
 
     for (let i = 0; i < size * size; i++) {
         const gridElement = document.createElement("div");
-        gridElement.className = "grid-element";
+        gridElement.className = "grid-square";
         gridElement.addEventListener('mouseover', e => e.target.classList.add('pinkColor'));
         container.appendChild(gridElement);
     }
