@@ -1,22 +1,33 @@
 
-const container = document.getElementById("container");
+const container = document.querySelector("#container");
+
+function clearGrid() {
+    const gridArray = Array.from(container.childNodes);
+    gridArray.forEach((element) => {
+        container.removeChild(element);
+    });
+  }
+
+function changeSize() {
+    let chosenSize = prompt("Enter the size you would like :)");
+
+    clearGrid();
+    createGrid(chosenSize);
+}
 
 function refreshPage() {
-    window.location.reload();
+    changeSize();
 }
 
 function createGrid(size) {
-    for(var i = 0; i < size; i++){ 
-        var row = document.createElement("div"); 
-        row.className = "row"; 
-        for(var x = 0; x < size; x++){ 
-            var cell = document.createElement("div"); 
-            cell.className = "gridsquare"; 
-            cell.addEventListener('mouseover',e => e.target.classList.add('pinkColor'))
-            row.appendChild(cell); 
-        }
-        container.appendChild(row); 
-      } 
+    container.style.gridTemplateColumns = `repeat(${size}, 1fr)`;
+
+    for (let i = 0; i < size * size; i++) {
+        const gridElement = document.createElement("div");
+        gridElement.className = "grid-element";
+        gridElement.addEventListener('mouseover', e => e.target.classList.add('pinkColor'));
+        container.appendChild(gridElement);
+    }
 }
 
 createGrid(16);
