@@ -1,5 +1,6 @@
 
 const container = document.querySelector("#container");
+let gridSize = 0;
 
 function clearGrid() {
     const gridArray = Array.from(container.childNodes);
@@ -16,10 +17,12 @@ function changeSize() {
 }
 
 function refreshPage() {
-    changeSize();
+    clearGrid();
+    createGrid(gridSize);
 }
 
 function createGrid(size) {
+    gridSize = size;
     container.style.gridTemplateColumns = `repeat(${size}, 1fr)`;
 
     for (let i = 0; i < size * size; i++) {
