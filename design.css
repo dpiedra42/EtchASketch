@@ -48,6 +48,7 @@ button:hover {
 .rainbow {
     background-image: linear-gradient(to left, violet, indigo, blue, green, rgb(224, 224, 47), orange, red);
     -webkit-background-clip: text;
+            background-clip: text;
     color:transparent
 }
 
