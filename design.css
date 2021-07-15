@@ -9,7 +9,9 @@ html {
     text-align: center;
     color: rgb(139, 216, 241);
     font-size: 48px;
-    font-family:Verdana, Geneva, Tahoma, sans-serif;
+    font-family:Georgia, 'Times New Roman', Times, serif;
+    margin: 25px;
+    margin-bottom: 0px;
 }
 
 h2 {
@@ -43,7 +45,7 @@ button:hover {
     background-color: pink;
 }
 
-.colorChoices {
+form[name="colorSelect"] {
     display: flex;
     justify-content: center;
     color: rgb(83, 194, 231);
@@ -72,12 +74,13 @@ button:hover {
 footer {
     display: flex;
     justify-content: center;
+    align-items: center;
     color: thistle;
     font-size: small;
 }
 
 .strawberry {
     margin-left: 5px;
-    height: 15px;
-    width: 15px;
+    height: 29px;
+    width: 35px;
 }
