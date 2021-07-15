@@ -4,22 +4,13 @@ let gridSize = 0;
 function changeColor(e, color) {
 
     if (color == 'Pink') {
-        const pinkR = 255;
-        const pinkG = 192;
-        const pinkB = 203;
-        e.target.style.backgroundColor = `rgb(${pinkR}, ${pinkG}, ${pinkB})`;
+        e.target.style.backgroundColor = `rgb(255, 192, 203)`;
     }
     else if (color == 'Rainbow'){
-        const randomR = Math.floor(Math.random() * 256);
-        const randomG = Math.floor(Math.random() * 256);
-        const randomB = Math.floor(Math.random() * 256);
-        e.target.style.backgroundColor = `rgb(${randomR}, ${randomG}, ${randomB})`;
+        e.target.style.backgroundColor = `hsl(${Math.random() * 360}, 100%, 50%)`;
     }
     else if (color == 'Lightpink') {
-        const lightpinkR = 250;
-        const lightpinkG = 234;
-        const lightpinkB = 244;
-        e.target.style.backgroundColor = `rgb(${lightpinkR}, ${lightpinkG}, ${lightpinkB})`;
+        e.target.style.backgroundColor = `rgb(250, 234, 244)`;
     }
   }
 
